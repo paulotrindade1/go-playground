@@ -1,4 +1,4 @@
-package main
+package array
 
 import (
 	"fmt"
@@ -30,4 +30,3 @@ func main() {
 	sums := make([]int, 4)
 	fmt.Println(sums)
 }
-

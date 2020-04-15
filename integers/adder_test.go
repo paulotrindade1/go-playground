@@ -7,20 +7,20 @@ import (
 
 func TestAdder(t *testing.T) {
 
-	assertCorrectResult := func (t *testing.T, sum, expected int) {
+	assertCorrectResult := func(t *testing.T, sum, expected int) {
 		t.Helper()
 		if sum != expected {
 			t.Errorf("expected %d but got %d", expected, sum)
-		} 
+		}
 	}
 
-	t.Run("sum two numbers", func (t *testing.T) {
+	t.Run("sum two numbers", func(t *testing.T) {
 		sum := Add(2, 2)
 		expected := 4
 
 		assertCorrectResult(t, sum, expected)
 	})
-	
+
 }
 
 func ExampleAdd() {
@@ -28,4 +28,3 @@ func ExampleAdd() {
 	fmt.Println(sum)
 	// Output: 11
 }
-	

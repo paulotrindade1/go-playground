@@ -7,7 +7,7 @@ import (
 
 func TestRepeat(t *testing.T) {
 
-	assertCorrectResult := func (t *testing.T, expected, repeated string) {
+	assertCorrectResult := func(t *testing.T, expected, repeated string) {
 		if repeated != expected {
 			t.Errorf("expected %q but got %q", expected, repeated)
 		}
