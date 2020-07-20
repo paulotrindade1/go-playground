@@ -1,4 +1,4 @@
-package array
+package main
 
 import (
 	"fmt"
@@ -28,5 +28,5 @@ func SumAllTails(numbersToSum ...[]int) []int {
 
 func main() {
 	sums := make([]int, 4)
-	fmt.Println(sums)
+	fmt.Println(Sum(sums))
 }

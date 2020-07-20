@@ -1,9 +1,9 @@
-package structures
+package main
 
 import "math"
 
 type Rectangle struct {
-	Width float64
+	Width  float64
 	Height float64
 }
 
@@ -20,7 +20,7 @@ func (c Circle) Area() float64 {
 }
 
 type Triangule struct {
-	Base float64
+	Base   float64
 	Height float64
 }
 
