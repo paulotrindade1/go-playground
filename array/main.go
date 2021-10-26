@@ -28,5 +28,8 @@ func SumAllTails(numbersToSum ...[]int) []int {
 
 func main() {
 	sums := make([]int, 4)
-	fmt.Println(Sum(sums))
+	for i := range sums {
+		sums[i] = 2
+	}
+	fmt.Println(sums)
 }
