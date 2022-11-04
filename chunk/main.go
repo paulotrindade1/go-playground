@@ -2,8 +2,7 @@ package main
 
 import "fmt"
 
-func chunkRecords(records []int, chunkS int) [][]int {
-	chunkSize := chunkS
+func chunkRecords(records []int, chunkSize int) [][]int {
 	var recordsBulk [][]int
 
 	for i := 0; i < len(records)/chunkSize; i++ {
