@@ -1,4 +1,4 @@
-package main
+package array
 
 import (
 	"reflect"
@@ -11,6 +11,17 @@ func TestSum(t *testing.T) {
 
 		got := Sum(numbers)
 		want := 62
+
+		if got != want {
+			t.Errorf("got %d want %d given, %v", got, want, numbers)
+		}
+	})
+
+	t.Run("collection of negative numbers", func(t *testing.T) {
+		numbers := []int{-2, -4, -8, -16, -32}
+
+		got := Sum(numbers)
+		want := -62
 
 		if got != want {
 			t.Errorf("got %d want %d given, %v", got, want, numbers)

@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package array
 
 func Sum(numbers []int) (sum int) {
 	for _, number := range numbers {
@@ -11,9 +7,7 @@ func Sum(numbers []int) (sum int) {
 	return
 }
 
-func SumAllTails(numbersToSum ...[]int) []int {
-	var sums []int
-
+func SumAllTails(numbersToSum ...[]int) (sums []int) {
 	for _, numbers := range numbersToSum {
 		if len(numbers) == 0 {
 			sums = append(sums, 0)
@@ -23,13 +17,5 @@ func SumAllTails(numbersToSum ...[]int) []int {
 		}
 	}
 
-	return sums
-}
-
-func main() {
-	sums := make([]int, 4)
-	for i := range sums {
-		sums[i] = 2
-	}
-	fmt.Println(sums)
+	return
 }
