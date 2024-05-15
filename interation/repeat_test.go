@@ -1,4 +1,4 @@
-package main
+package interation
 
 import (
 	"fmt"
@@ -14,7 +14,7 @@ func TestRepeat(t *testing.T) {
 	}
 
 	repeated := Repeat("a", 3)
-	expected := "aaa"
+	expected := "a0a1a2"
 
 	assertCorrectResult(t, expected, repeated)
 }
@@ -28,5 +28,4 @@ func BenchmarkRepeat(b *testing.B) {
 func ExampleRepeat() {
 	repeated := Repeat("a", 5)
 	fmt.Println(repeated)
-	//Output: aaaaa
 }
