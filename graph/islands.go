@@ -45,7 +45,7 @@ func dfs(graph [][]int, visited map[int]map[int]bool, i, j int) {
 
 func main() {
 	graph := [][]int{
-		{1, 1, 1, 0, 0},
+		{1, 1, 1, 0, 1},
 		{1, 1, 0, 1, 0},
 		{1, 1, 0, 1, 0},
 		{0, 0, 0, 1, 0},
