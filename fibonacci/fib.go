@@ -26,12 +26,5 @@ func fib(n int) int {
 }
 
 func main() {
-	// fmt.Println(Fibonacci(-1))
-	fmt.Println(Fibonacci(0))
-	fmt.Println(Fibonacci(1))
-	fmt.Println(Fibonacci(2))
-	fmt.Println(Fibonacci(3))
-	fmt.Println(Fibonacci(4))
 	fmt.Println(Fibonacci(5))
-	fmt.Println(Fibonacci(6))
 }
